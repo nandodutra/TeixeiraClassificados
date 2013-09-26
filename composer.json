@@ -1,0 +1,13 @@
+
+{
+    "name": "Teixeira Classificados",
+    "description": "Teixeira Classificados",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require": {
+        "facebook/php-sdk": "dev-master",
+        "slim/slim": "dev-develop",
+        "php-activerecord/php-activerecord": "dev-master"
+    }
+}
