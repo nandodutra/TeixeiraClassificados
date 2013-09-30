@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "79c6992932187d196b4ec41bb8634243",
+    "hash": "1967017c95c50cb13e63365b2cc755d2",
     "packages": [
         {
             "name": "facebook/php-sdk",
@@ -85,16 +85,16 @@
         },
         {
             "name": "slim/slim",
-            "version": "dev-develop",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeguy/Slim.git",
-                "reference": "647d282e8ccfca0251f58b7dbb10d8d695ec6689"
+                "reference": "5932fcb53e727f7fd3bd8411b3ad1d54217b4a48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeguy/Slim/zipball/647d282e8ccfca0251f58b7dbb10d8d695ec6689",
-                "reference": "647d282e8ccfca0251f58b7dbb10d8d695ec6689",
+                "url": "https://api.github.com/repos/codeguy/Slim/zipball/5932fcb53e727f7fd3bd8411b3ad1d54217b4a48",
+                "reference": "5932fcb53e727f7fd3bd8411b3ad1d54217b4a48",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +125,54 @@
                 "rest",
                 "router"
             ],
-            "time": "2013-09-22 02:42:30"
+            "time": "2013-09-27 01:48:57"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Yaml",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Yaml.git",
+                "reference": "ef4878bcca171ebe7466be0505b85a710818d788"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/ef4878bcca171ebe7466be0505b85a710818d788",
+                "reference": "ef4878bcca171ebe7466be0505b85a710818d788",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Yaml\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "http://symfony.com",
+            "time": "2013-09-22 18:04:51"
         }
     ],
     "packages-dev": [
@@ -137,8 +184,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "facebook/php-sdk": 20,
-        "slim/slim": 20,
-        "php-activerecord/php-activerecord": 20
+        "php-activerecord/php-activerecord": 20,
+        "symfony/yaml": 20
     },
     "platform": [
 

@@ -1,0 +1,15 @@
+app:
+    title: Teixeira Classificados
+    css:
+        bootstrap:
+            file: bootstrap.min.css
+            media: all
+        custom:
+            file: custom-style.css
+            media: all
+
+database:
+    host: localhost
+    username: root
+    password: 123
+    dbname: teixeira_classificados
