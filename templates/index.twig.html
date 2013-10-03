@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	{% for c in css %}
+		<link rel="stylesheet" href="css/{{ c.file }}" media="{{ c.media }}">
+	{% endfor %}
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <ul class="tabs">
+          <li class="active"><a href="#">Anúncios</a></li>
+          <li><a href="#">Postar Anúncio</a></li>
+        </ul>
+        
+    </div>
+    {% block content %}
+    
+    {% endblock %}
+</div>
+</body>
+</html>

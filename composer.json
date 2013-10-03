@@ -4,14 +4,15 @@
     "description": "Teixeira Classificados",
     "autoload": {
         "psr-0": { 
-            "": "src/", 
-            "": "models/" 
+            "": "src/"
         }
     },
     "require": {
         "facebook/php-sdk": "dev-master",
         "slim/slim": "2.*",
         "php-activerecord/php-activerecord": "dev-master",
-        "symfony/yaml": "2.4.*@dev"
+        "symfony/yaml": "2.4.*@dev",
+        "slim/extras": "dev-master",
+        "twig/twig": "1.14.*@dev"
     }
 }

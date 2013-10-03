@@ -1,0 +1,16 @@
+{% extends "index.twig.html" %}
+
+{% block content %}
+    <div class="row">
+
+        {% for v in vendas %}
+        <div class="span12">
+            <h2>{{ v.description }}</h2>
+            <p>{{ v.full_description }}</p>
+            <p>
+                <a class="btn" href="http://twitter.github.com/bootstrap">Detalhes »</a>
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
