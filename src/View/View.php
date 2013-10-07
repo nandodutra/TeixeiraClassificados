@@ -28,7 +28,10 @@ class View extends \Slim\Extras\Views\Twig
 
         $this->data['content'] = $template;
         $this->data['title'] = isset($this->data['title']) ? $this->data['title'] : $config['app']['title'];
+        
         $this->data['css'] = isset($this->data['css']) ? array_merge($this->data['css'], $config['app']['css']) : $config['app']['css'];
+
+        $this->data['js'] = isset($this->data['js']) ? array_merge($this->data['js'], $config['app']['js']) : $config['app']['js'];
 
         $env = $this->getEnvironment();
         $template = $env->loadTemplate($template);

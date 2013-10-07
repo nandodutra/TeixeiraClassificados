@@ -1,13 +1,18 @@
 app:
-    title: Teixeira Classificados
+    title: Teste
     css:
         bootstrap:
             file: bootstrap.min.css
             media: all
+        bootstrap-theme:
+            file: bootstrap-theme.css
+            media: all
         custom:
             file: custom-style.css
             media: all
-
+    js:
+        bootstrap:
+            file: bootstrap.min.js
 database:
     host: localhost
     username: root

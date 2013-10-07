@@ -1,16 +1,20 @@
 {% extends "index.twig.html" %}
 
 {% block content %}
-    <div class="row">
-
+    {% if vendas is defined %}
         {% for v in vendas %}
-        <div class="span12">
+        <div class="col-lg-4">
             <h2>{{ v.description }}</h2>
             <p>{{ v.full_description }}</p>
             <p>
-                <a class="btn" href="http://twitter.github.com/bootstrap">Detalhes »</a>
+                <a class="btn btn-default" href="http://twitter.github.com/bootstrap">Detalhes »</a>
             </p>
         </div>
         {% endfor %}
+    {% else %}
+    <br/>
+    <div class="alert alert-info">
+        <i class="glyphicon glyphicon-exclamation-sign"></i> Desculpe, ainda não temos anúncios cadastradas ainda!
     </div>
+    {% endif %}
 {% endblock %}

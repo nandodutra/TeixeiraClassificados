@@ -6,19 +6,27 @@
 	{% for c in css %}
 		<link rel="stylesheet" href="css/{{ c.file }}" media="{{ c.media }}">
 	{% endfor %}
+  {% for j in js %}
+  <script type="text/javascript" src="js/{{ j.file }}"></script>
+  {% endfor %}
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row-fluid">
-        <ul class="tabs">
-          <li class="active"><a href="#">Anúncios</a></li>
-          <li><a href="#">Postar Anúncio</a></li>
-        </ul>
-        
+    <div class="container">
+      <div class="row">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Anúncios</a></li>
+            <li><a href="#">Postar Anúncio</a></li>
+            <li>
+              
+            </li>
+          </ul>
+
+      </div>
+      <div class="row">
+      {% block content %}
+      
+      {% endblock %}
+      </div>
     </div>
-    {% block content %}
-    
-    {% endblock %}
-</div>
 </body>
 </html>

@@ -28,7 +28,6 @@ ActiveRecord\Config::initialize(function($cfg) use ($dbconfig)
         'development' => 'mysql://'.$dbconfig['username'].':'.$dbconfig['password'].'@'.$dbconfig['host'].'/'.$dbconfig['dbname']));
 });
 
-
 //Configurando o Slim PHP e a Twig Extension para trabalharem juntos
 $app = new Slim();
 
