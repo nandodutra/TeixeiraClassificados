@@ -140,12 +140,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeguy/Slim.git",
-                "reference": "5932fcb53e727f7fd3bd8411b3ad1d54217b4a48"
+                "reference": "a9abd36d53d9c1f7732f490f8e809e55045307b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeguy/Slim/zipball/5932fcb53e727f7fd3bd8411b3ad1d54217b4a48",
-                "reference": "5932fcb53e727f7fd3bd8411b3ad1d54217b4a48",
+                "url": "https://api.github.com/repos/codeguy/Slim/zipball/a9abd36d53d9c1f7732f490f8e809e55045307b3",
+                "reference": "a9abd36d53d9c1f7732f490f8e809e55045307b3",
                 "shasum": ""
             },
             "require": {
@@ -176,7 +176,7 @@
                 "rest",
                 "router"
             ],
-            "time": "2013-09-27 01:48:57"
+            "time": "2013-09-29 19:46:31"
         },
         {
             "name": "symfony/yaml",
@@ -231,12 +231,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "d3b488a8b772e5f127050950c59810a867b3b002"
+                "reference": "09c386b3359cc22b4112197c2d8c6d6f7a49c918"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/d3b488a8b772e5f127050950c59810a867b3b002",
-                "reference": "d3b488a8b772e5f127050950c59810a867b3b002",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/09c386b3359cc22b4112197c2d8c6d6f7a49c918",
+                "reference": "09c386b3359cc22b4112197c2d8c6d6f7a49c918",
                 "shasum": ""
             },
             "require": {
@@ -272,7 +272,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-10-03 07:19:21"
+            "time": "2013-10-07 10:00:50"
         }
     ],
     "packages-dev": [

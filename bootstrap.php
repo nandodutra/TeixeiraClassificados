@@ -15,6 +15,25 @@ use Symfony\Component\Yaml\Yaml,
 //define uma constante para ROOTPATH
 define('ROOT', realpath(__DIR__).'/');
 
+require_once ROOT . 'vendor/facebook/php-sdk/src/facebook.php';
+
+$facebook = new Facebook(array(
+  'appId'  => '506990286063508',
+  'secret' => 'b66bc78c142b9e6b8fd589cff2302608',
+));
+
+$user = $facebook->getUser();
+
+if ($user) {
+  try {
+    // Proceed knowing you have a logged in user who's authenticated.
+    $user_profile = $facebook->api('/me');
+  } catch (FacebookApiException $e) {
+    error_log($e);
+    $user = null;
+  }
+}
+
 //Carregando configurações básicas da aplicação
 $config = Yaml::parse(file_get_contents(ROOT . 'config/app.yml'));
 
